@@ -1,30 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trendora Vibe</title>
+<title>Trendora Vibe | Discover Your Style</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#222;background:#faf7f2}
-header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:10}
-.logo{font-size:25px;font-weight:800}
-nav a{margin-left:22px;text-decoration:none;color:#222}
-.hero{padding:90px 7%;text-align:center;background:linear-gradient(135deg,#f7d8df,#e8ddff)}
-.hero h1{font-size:56px;margin:0 0 15px}
-.hero p{font-size:20px;margin-bottom:28px}
-.btn{display:inline-block;padding:13px 24px;border-radius:30px;background:#222;color:#fff;text-decoration:none}
-section{padding:65px 7%}
-.title{text-align:center;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:#fff;padding:28px;border-radius:18px;text-align:center;box-shadow:0 8px 25px #0000000d}
-.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px #00000018;transition:0.3s}
-.card img{display:block;max-width:100%;height:auto;margin:0 auto 18px}
-.card .icon{font-size:45px}
-.card h3{margin-bottom:8px}
-footer{text-align:center;padding:30px;background:#222;color:#fff}
-@media(max-width:600px){.hero h1{font-size:40px}nav{display:none}}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+color:#29252a;
+background:#fffaf8;
+}
+
+header{
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+position:sticky;
+top:0;
+z-index:10;
+box-shadow:0 2px 15px #0000000a;
+}
+
+.logo{
+font-size:25px;
+font-weight:800;
+letter-spacing:-.5px;
+}
+
+nav a{
+margin-left:22px;
+text-decoration:none;
+color:#29252a;
+font-weight:600;
+}
+
+.hero{
+padding:100px 7%;
+text-align:center;
+background:linear-gradient(135deg,#f8dce3,#eee4ff,#e5f5ef);
+}
+
+.hero h1{
+font-size:58px;
+margin:0 0 18px;
+}
+
+.hero p{
+font-size:20px;
+max-width:600px;
+margin:0 auto 30px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:30px;
+background:#29252a;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+}
+
+.section{
+padding:70px 7%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.title h2{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.title p{
+color:#666;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+}
+
+.category{
+background:#fff;
+padding:40px 25px;
+border-radius:22px;
+text-align:center;
+text-decoration:none;
+color:#29252a;
+box-shadow:0 8px 25px #0000000c;
+transition:.3s;
+}
+
+.category:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 30px #00000018;
+}
+
+.category .emoji{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.category h3{
+margin:8px 0;
+font-size:21px;
+}
+
+.category p{
+color:#777;
+line-height:1.5;
+}
+
+.about{
+background:#fff;
+text-align:center;
+}
+
+.about p{
+max-width:650px;
+margin:auto;
+line-height:1.8;
+color:#666;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#29252a;
+color:#fff;
+}
+
+@media(max-width:600px){
+.hero h1{font-size:42px}
+nav{display:none}
+.hero{padding:75px 7%}
+}
 </style>
 </head>
 
@@ -32,109 +154,84 @@ footer{text-align:center;padding:30px;background:#222;color:#fff}
 
 <header>
 <div class="logo">Trendora Vibe</div>
+
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#jewelry">Jewelry</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="jewelry.html">Jewelry</a>
+<a href="#categories">Shop</a>
 </nav>
 </header>
 
 <main>
 
-<section class="hero" id="home">
-<h1>Trendora Vibe</h1>
-<p>Discover trends. Share your vibe. Build your brand.</p>
-<a class="btn" href="#services">Explore Now</a>
+<section class="hero">
+<h1>Find Your Vibe ✨</h1>
+
+<p>
+Discover stylish finds, beautiful accessories and trending products
+chosen to add a little more vibe to your everyday life.
+</p>
+
+<a class="btn" href="#categories">Shop the Finds</a>
 </section>
 
-<section id="about">
-<div class="title">
-<h2>About Trendora Vibe</h2>
-<p>A fresh, modern space for ideas, style and online inspiration.</p>
-</div>
-</section>
 
-<section id="services">
-<div class="title">
-<h2>What We Offer</h2>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="icon">✨</div>
-<h3>Trending Ideas</h3>
-<p>Fresh concepts and inspiration for your audience.</p>
-</div>
-
-<div class="card">
-<div class="icon">📱</div>
-<h3>Social Vibes</h3>
-<p>Create an engaging presence across social platforms.</p>
-</div>
-
-<div class="card">
-<div class="icon">🚀</div>
-<h3>Brand Growth</h3>
-<p>Turn your vision into a memorable online brand.</p>
-</div>
-
-</div>
-</section>
-
-<section id="jewelry">
+<section class="section" id="categories">
 
 <div class="title">
-<h2>Jewelry</h2>
-<p>Elegant pieces to complete your look ✨</p>
+<h2>Explore Trendora</h2>
+<p>Discover something you'll love.</p>
 </div>
 
-<div class="grid">
+<div class="categories">
 
-<div class="card">
-<img src="S568383c568e3495495e01f96b8c916e33.jpg" style="width:100%;border-radius:12px;">
-<h3>Floral Gold-Tone Cuff Bracelet</h3>
-<p>Delicate floral design with beautiful pink, blue and white variations — perfect for adding a feminine touch to any outfit.</p>
-<a href="https://s.click.aliexpress.com/e/_c3wlqHyP" class="btn" target="_blank">Shop on AliExpress</a>
-</div>
+<a class="category" href="jewelry.html">
+<div class="emoji">💎</div>
+<h3>Jewelry</h3>
+<p>Elegant pieces and everyday accessories.</p>
+</a>
 
-<div class="card">
-<img src="Sf3a125b6f8404db798a31926e29b4aa7q.jpg" style="width:100%;border-radius:12px;">
-<h3>Elegant Flower Cuff Bracelet</h3>
-<p>A graceful gold-tone floral bracelet designed for a soft, elegant and stylish look.</p>
-<a href="https://s.click.aliexpress.com/e/_c3wlqHyP" class="btn" target="_blank">Shop on AliExpress</a>
-</div>
+<a class="category" href="#">
+<div class="emoji">👜</div>
+<h3>Fashion</h3>
+<p>Trendy accessories to complete your look.</p>
+</a>
 
-<div class="card">
-<img src="Screenshot_20260820-110824.png" style="width:100%;border-radius:12px;">
-<h3>Gold-Tone Heart Cuff Bracelet</h3>
-<p>A delicate gold-tone cuff featuring elegant heart details — a simple statement piece for everyday style.</p>
-<a href="https://s.click.aliexpress.com/e/_c2xTnTwb" class="btn" target="_blank">Shop on AliExpress</a>
-</div>
+<a class="category" href="#">
+<div class="emoji">🏠</div>
+<h3>Home Finds</h3>
+<p>Beautiful and useful finds for your space.</p>
+</a>
 
-<div class="card">
-<img src="Screenshot_20260820-110747.png" style="width:100%;border-radius:12px;">
-<h3>Gold-Tone Shell Cuff Bracelet</h3>
-<p>A chic gold-tone cuff with shell-inspired details, perfect for adding a refined touch to any outfit.</p>
-<a href="https://s.click.aliexpress.com/e/_c2xTnTwb" class="btn" target="_blank">Shop on AliExpress</a>
-</div>
+<a class="category" href="#">
+<div class="emoji">📱</div>
+<h3>Tech Finds</h3>
+<p>Useful gadgets and clever everyday picks.</p>
+</a>
 
 </div>
 </section>
 
-<section id="contact">
+
+<section class="section about">
+
 <div class="title">
-<h2>Let's Connect</h2>
-<p>Ready to bring your Trendora Vibe to life?</p>
-<a class="btn" href="mailto:hello@trendoravibe.com">Contact Us</a>
+<h2>Welcome to Trendora Vibe</h2>
 </div>
+
+<p>
+Trendora Vibe is your place to discover stylish, useful and
+interesting products from around the web — all in one simple,
+beautiful space.
+</p>
+
 </section>
 
 </main>
 
-<footer>© 2026 Trendora Vibe. All rights reserved.</footer>
+<footer>
+© 2026 Trendora Vibe. All rights reserved.
+</footer>
 
 </body>
-  </html>
+</html>
