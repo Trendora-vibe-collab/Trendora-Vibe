@@ -3,149 +3,343 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trendora Vibe | Discover Your Style</title>
+
+<title>Trendora Vibe | Curated Finds</title>
 
 <style>
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:Arial,sans-serif;
-color:#29252a;
-background:#fffaf8;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:#f5f0e7;
+  color:#171717;
+}
+
+/* HEADER */
+
 header{
-padding:18px 7%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#fff;
-position:sticky;
-top:0;
-z-index:10;
-box-shadow:0 2px 15px #0000000a;
+  background:#111;
+  color:#f5f0e7;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid #b79a62;
 }
 
 .logo{
-font-size:25px;
-font-weight:800;
-letter-spacing:-.5px;
+  font-family:Arial,sans-serif;
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:2px;
 }
 
 nav a{
-margin-left:22px;
-text-decoration:none;
-color:#29252a;
-font-weight:600;
+  color:#f5f0e7;
+  text-decoration:none;
+  margin-left:25px;
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
+nav a:hover{
+  color:#c6a86b;
+}
+
+/* HERO */
+
 .hero{
-padding:100px 7%;
-text-align:center;
-background:linear-gradient(135deg,#f8dce3,#eee4ff,#e5f5ef);
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:90px 7%;
+  background:
+    radial-gradient(circle at 20% 20%,#3a3023 0%,transparent 35%),
+    radial-gradient(circle at 80% 80%,#332b22 0%,transparent 35%),
+    #111;
+  color:#f5f0e7;
+}
+
+.hero-content{
+  max-width:850px;
+}
+
+.eyebrow{
+  font-family:Arial,sans-serif;
+  color:#c6a86b;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  font-size:12px;
+  margin-bottom:25px;
 }
 
 .hero h1{
-font-size:58px;
-margin:0 0 18px;
+  font-size:clamp(48px,8vw,86px);
+  line-height:1;
+  font-weight:500;
+  margin-bottom:25px;
+}
+
+.hero h1 span{
+  color:#c6a86b;
+  font-style:italic;
 }
 
 .hero p{
-font-size:20px;
-max-width:600px;
-margin:0 auto 30px;
-line-height:1.6;
+  max-width:620px;
+  margin:0 auto 35px;
+  font-size:19px;
+  line-height:1.7;
+  color:#d8d1c5;
 }
 
 .btn{
-display:inline-block;
-padding:14px 28px;
-border-radius:30px;
-background:#29252a;
-color:#fff;
-text-decoration:none;
-font-weight:700;
+  display:inline-block;
+  padding:15px 30px;
+  background:#c6a86b;
+  color:#111;
+  text-decoration:none;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  transition:.3s;
 }
+
+.btn:hover{
+  background:#f0dfb8;
+  transform:translateY(-3px);
+}
+
+/* COLLECTIONS */
 
 .section{
-padding:70px 7%;
+  padding:90px 7%;
 }
 
-.title{
-text-align:center;
-margin-bottom:40px;
+.section-heading{
+  text-align:center;
+  margin-bottom:50px;
 }
 
-.title h2{
-font-size:34px;
-margin-bottom:10px;
+.section-heading .small{
+  font-family:Arial,sans-serif;
+  color:#9b7b42;
+  font-size:12px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:14px;
 }
 
-.title p{
-color:#666;
+.section-heading h2{
+  font-size:44px;
+  font-weight:500;
+  margin-bottom:12px;
 }
+
+.section-heading p{
+  color:#665f55;
+  font-family:Arial,sans-serif;
+}
+
+/* CATEGORY CARDS */
 
 .categories{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:22px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  max-width:1200px;
+  margin:auto;
 }
 
 .category{
-background:#fff;
-padding:40px 25px;
-border-radius:22px;
-text-align:center;
-text-decoration:none;
-color:#29252a;
-box-shadow:0 8px 25px #0000000c;
-transition:.3s;
+  min-height:300px;
+  padding:35px 25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  text-decoration:none;
+  color:#f5f0e7;
+  background:#171717;
+  border:1px solid #3a3329;
+  transition:.35s;
+  position:relative;
+  overflow:hidden;
+}
+
+.category:nth-child(2){
+  background:#25221d;
+}
+
+.category:nth-child(3){
+  background:#20211e;
+}
+
+.category:nth-child(4){
+  background:#1d1d1d;
 }
 
 .category:hover{
-transform:translateY(-6px);
-box-shadow:0 14px 30px #00000018;
+  transform:translateY(-8px);
+  border-color:#c6a86b;
 }
 
-.category .emoji{
-font-size:48px;
-margin-bottom:15px;
+.category-icon{
+  font-size:48px;
+  margin-bottom:auto;
+}
+
+.category-number{
+  color:#c6a86b;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:3px;
+  margin-bottom:12px;
 }
 
 .category h3{
-margin:8px 0;
-font-size:21px;
+  font-size:29px;
+  font-weight:500;
+  margin-bottom:8px;
 }
 
 .category p{
-color:#777;
-line-height:1.5;
+  color:#bdb6aa;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  line-height:1.5;
 }
 
-.about{
-background:#fff;
-text-align:center;
+/* BRAND STORY */
+
+.story{
+  background:#111;
+  color:#f5f0e7;
+  text-align:center;
 }
 
-.about p{
-max-width:650px;
-margin:auto;
-line-height:1.8;
-color:#666;
+.story-inner{
+  max-width:760px;
+  margin:auto;
 }
+
+.story .small{
+  color:#c6a86b;
+  font-family:Arial,sans-serif;
+  letter-spacing:4px;
+  font-size:12px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.story h2{
+  font-size:45px;
+  font-weight:500;
+  margin-bottom:25px;
+}
+
+.story p{
+  color:#c8c0b3;
+  line-height:1.8;
+  font-size:17px;
+}
+
+/* FOOTER */
 
 footer{
-text-align:center;
-padding:30px;
-background:#29252a;
-color:#fff;
+  background:#111;
+  color:#777;
+  text-align:center;
+  padding:35px 7%;
+  border-top:1px solid #302b24;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:.5px;
 }
 
-@media(max-width:600px){
-.hero h1{font-size:42px}
-nav{display:none}
-.hero{padding:75px 7%}
+/* MOBILE */
+
+@media(max-width:800px){
+
+  header{
+    padding:17px 5%;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  nav a{
+    margin-left:10px;
+    font-size:10px;
+  }
+
+  .hero{
+    min-height:600px;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .category{
+    min-height:260px;
+  }
+
+  .section{
+    padding:70px 5%;
+  }
+
+}
+
+@media(max-width:500px){
+
+  nav{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .categories{
+    grid-template-columns:1fr;
+  }
+
+  .category{
+    min-height:220px;
+  }
+
+  .section-heading h2,
+  .story h2{
+    font-size:35px;
+  }
+
 }
 </style>
 </head>
@@ -153,85 +347,198 @@ nav{display:none}
 <body>
 
 <header>
-<div class="logo">Trendora Vibe</div>
+
+<div class="logo">
+TRENDORA VIBE
+</div>
 
 <nav>
 <a href="index.html">Home</a>
 <a href="jewelry.html">Jewelry</a>
-<a href="#categories">Shop</a>
+<a href="#collections">Shop</a>
 </nav>
+
 </header>
+
 
 <main>
 
+<!-- HERO -->
+
 <section class="hero">
-<h1>Find Your Vibe ✨</h1>
+
+<div class="hero-content">
+
+<div class="eyebrow">
+Style • Finds • Inspiration
+</div>
+
+<h1>
+Find Something<br>
+Worth <span>Vibing</span> About.
+</h1>
 
 <p>
-Discover stylish finds, beautiful accessories and trending products
-chosen to add a little more vibe to your everyday life.
+Curated fashion, jewelry, accessories and everyday finds
+chosen to bring a little more style into your world.
 </p>
 
-<a class="btn" href="#categories">Shop the Finds</a>
+<a class="btn" href="#collections">
+Explore Collections
+</a>
+
+</div>
+
 </section>
 
 
-<section class="section" id="categories">
+<!-- COLLECTIONS -->
 
-<div class="title">
-<h2>Explore Trendora</h2>
-<p>Discover something you'll love.</p>
+<section class="section" id="collections">
+
+<div class="section-heading">
+
+<div class="small">
+The Trendora Edit
 </div>
+
+<h2>
+Explore Our Finds
+</h2>
+
+<p>
+Discover something beautiful, useful or simply worth having.
+</p>
+
+</div>
+
 
 <div class="categories">
 
+
 <a class="category" href="jewelry.html">
-<div class="emoji">💎</div>
-<h3>Jewelry</h3>
-<p>Elegant pieces and everyday accessories.</p>
+
+<div class="category-icon">
+💎
+</div>
+
+<div class="category-number">
+01 — COLLECTION
+</div>
+
+<h3>
+Jewelry
+</h3>
+
+<p>
+Elegant pieces for everyday moments and special occasions.
+</p>
+
 </a>
 
-<a class="category" href="#">
-<div class="emoji">👜</div>
-<h3>Fashion</h3>
-<p>Trendy accessories to complete your look.</p>
-</a>
 
 <a class="category" href="#">
-<div class="emoji">🏠</div>
-<h3>Home Finds</h3>
-<p>Beautiful and useful finds for your space.</p>
+
+<div class="category-icon">
+👜
+</div>
+
+<div class="category-number">
+02 — COLLECTION
+</div>
+
+<h3>
+Fashion
+</h3>
+
+<p>
+Stylish accessories and pieces to complete your look.
+</p>
+
 </a>
 
+
 <a class="category" href="#">
-<div class="emoji">📱</div>
-<h3>Tech Finds</h3>
-<p>Useful gadgets and clever everyday picks.</p>
+
+<div class="category-icon">
+🏠
+</div>
+
+<div class="category-number">
+03 — COLLECTION
+</div>
+
+<h3>
+Home
+</h3>
+
+<p>
+Beautiful finds designed to add character to your space.
+</p>
+
 </a>
+
+
+<a class="category" href="#">
+
+<div class="category-icon">
+📱
+</div>
+
+<div class="category-number">
+04 — COLLECTION
+</div>
+
+<h3>
+Tech
+</h3>
+
+<p>
+Smart gadgets and useful finds for everyday life.
+</p>
+
+</a>
+
 
 </div>
+
 </section>
 
 
-<section class="section about">
+<!-- BRAND STORY -->
 
-<div class="title">
-<h2>Welcome to Trendora Vibe</h2>
+<section class="section story">
+
+<div class="story-inner">
+
+<div class="small">
+Welcome to Trendora Vibe
 </div>
 
+<h2>
+Your Vibe.<br>
+Your Finds.
+</h2>
+
 <p>
-Trendora Vibe is your place to discover stylish, useful and
-interesting products from around the web — all in one simple,
-beautiful space.
+Trendora Vibe is a curated space for discovering stylish,
+interesting and useful products from around the web.
+We search for the finds worth noticing so you can spend
+less time searching and more time enjoying what you discover.
 </p>
+
+</div>
 
 </section>
 
 </main>
 
+
 <footer>
-© 2026 Trendora Vibe. All rights reserved.
+
+© 2026 Trendora Vibe — All rights reserved.
+
 </footer>
 
 </body>
-</html>
+  </html>
