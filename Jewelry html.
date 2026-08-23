@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trendora Vibe | Jewelry</title>
+<title>Jewelry | Trendora Vibe</title>
 
 <style>
 *{
@@ -13,43 +12,33 @@
   padding:0;
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
 body{
-  font-family:Georgia,"Times New Roman",serif;
-  background:#f5f0e7;
-  color:#171717;
+  background:#faf7f2;
+  color:#2f2924;
+  font-family:Arial,sans-serif;
 }
-
-/* HEADER */
 
 header{
-  background:#111;
-  color:#f5f0e7;
-  padding:20px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:100;
-  border-bottom:1px solid #b79a62;
+  background:#1f1a17;
+  padding:22px 20px;
+  text-align:center;
 }
 
 .logo{
-  font-family:Arial,sans-serif;
-  font-size:25px;
-  font-weight:800;
+  color:#c6a86b;
+  font-family:Georgia,serif;
+  font-size:30px;
   letter-spacing:2px;
+}
+
+nav{
+  margin-top:15px;
 }
 
 nav a{
   color:#f5f0e7;
   text-decoration:none;
-  margin-left:25px;
-  font-family:Arial,sans-serif;
+  margin:0 12px;
   font-size:14px;
   font-weight:600;
   letter-spacing:1px;
@@ -60,147 +49,119 @@ nav a:hover{
   color:#c6a86b;
 }
 
-/* HERO */
-
-.page-hero{
-  padding:90px 7%;
+.hero{
   text-align:center;
-  background:#111;
-  color:#f5f0e7;
+  padding:45px 20px 30px;
 }
 
-.page-hero .small{
-  color:#c6a86b;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:5px;
-  text-transform:uppercase;
-  margin-bottom:20px;
-}
-
-.page-hero h1{
-  font-size:60px;
-  font-weight:500;
-  margin-bottom:18px;
-}
-
-.page-hero p{
-  color:#c8c0b3;
-  font-family:Arial,sans-serif;
-  max-width:600px;
-  margin:auto;
-  line-height:1.7;
-}
-
-/* PRODUCTS */
-
-.products{
-  padding:80px 7%;
-  max-width:1250px;
-  margin:auto;
-}
-
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.product{
-  background:#fff;
-  padding:18px;
-  border:1px solid #ded5c6;
-  transition:.3s;
-}
-
-.product:hover{
-  transform:translateY(-6px);
-  box-shadow:0 15px 35px #00000018;
-  border-color:#c6a86b;
-}
-
-.product img{
-  width:100%;
-  height:300px;
-  object-fit:cover;
-  display:block;
-  margin-bottom:20px;
-}
-
-.product-label{
-  color:#9b7b42;
-  font-family:Arial,sans-serif;
-  font-size:10px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  margin-bottom:9px;
-}
-
-.product h2{
-  font-size:23px;
-  font-weight:500;
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:38px;
   margin-bottom:10px;
 }
 
-.product p{
-  font-family:Arial,sans-serif;
-  color:#666;
-  font-size:14px;
-  line-height:1.6;
-  margin-bottom:20px;
+.hero p{
+  color:#756b63;
+  font-size:15px;
 }
 
-.btn{
+.products{
+  max-width:1100px;
+  margin:20px auto 60px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:transform .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  display:block;
+}
+
+.info{
+  padding:18px;
+  text-align:center;
+}
+
+.info h2{
+  font-family:Georgia,serif;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.info p{
+  color:#777;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+.shop{
   display:inline-block;
-  padding:13px 22px;
-  background:#111;
-  color:#fff;
+  background:#1f1a17;
+  color:white;
   text-decoration:none;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  font-weight:700;
+  padding:10px 20px;
+  border-radius:4px;
+  font-size:13px;
   letter-spacing:1px;
   text-transform:uppercase;
-  transition:.3s;
 }
 
-.btn:hover{
+.shop:hover{
   background:#c6a86b;
-  color:#111;
+  color:#1f1a17;
 }
-
-/* FOOTER */
 
 footer{
-  background:#111;
-  color:#777;
+  background:#1f1a17;
+  color:#aaa;
   text-align:center;
-  padding:35px;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  border-top:1px solid #302b24;
+  padding:25px 15px;
+  font-size:13px;
 }
 
-/* MOBILE */
-
 @media(max-width:600px){
-
-  nav{
-    display:none;
-  }
-
-  .page-hero h1{
-    font-size:45px;
+  .hero h1{
+    font-size:30px;
   }
 
   .products{
-    padding:60px 5%;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:0 12px;
   }
 
-  .product img{
-    height:280px;
+  .card img{
+    height:210px;
   }
 
+  .info{
+    padding:12px 8px;
+  }
+
+  .info h2{
+    font-size:16px;
+  }
+
+  .shop{
+    padding:8px 12px;
+    font-size:11px;
+  }
 }
 </style>
 </head>
@@ -208,50 +169,61 @@ footer{
 <body>
 
 <header>
+  <div class="logo">TRENDORA VIBE</div>
 
-<div class="logo">
-TRENDORA VIBE
-</div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="Jewelry.html">Jewelry</a>
-<a href="index.html#collections">Shop</a>
-</nav>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Jewelry.html">Jewelry</a>
+  </nav>
 </header>
 
-<main>
-
-<section class="page-hero">
-
-<div class="small">
-The Jewelry Edit
-</div>
-
-<h1>Jewelry</h1>
-
-<p>
-Elegant details, statement pieces and beautiful finds
-chosen to add a little sparkle to your everyday style.
-</p>
-
+<section class="hero">
+  <h1>Jewelry Collection</h1>
+  <p>Elegant pieces to add a little more shine to your everyday style.</p>
 </section>
 
 <section class="products">
 
-<div class="product-grid">
+  <div class="card">
+    <img src="S00aa9e172c3f4d23921a3fb2146e40e7H.jpg" alt="Gold Shell Jewelry">
+    <div class="info">
+      <h2>Golden Shell Jewelry</h2>
+      <p>Elegant shell-inspired gold piece.</p>
+      <a class="shop" href="https://s.click.aliexpress.com/e/_c3wlqHyP" target="_blank">Shop Now</a>
+    </div>
+  </div>
 
-<!-- NEW JEWELRY PRODUCTS WILL GO HERE -->
+  <div class="card">
+    <img src="S4333ae49e30a4800ad66537bef71f810C.jpg" alt="Gold Jewelry">
+    <div class="info">
+      <h2>Golden Elegance</h2>
+      <p>A delicate piece for a timeless look.</p>
+      <a class="shop" href="https://s.click.aliexpress.com/e/_c3wlqHyP" target="_blank">Shop Now</a>
+    </div>
+  </div>
 
-</div>
+  <div class="card">
+    <img src="Screenshot_20260820-110747.png" alt="Shell Jewelry">
+    <div class="info">
+      <h2>Shell Charm</h2>
+      <p>Beautiful details with a coastal touch.</p>
+      <a class="shop" href="https://s.click.aliexpress.com/e/_c3wlqHyP" target="_blank">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Screenshot_20260820-110824.png" alt="Gold Shell Jewelry">
+    <div class="info">
+      <h2>Golden Shell Charm</h2>
+      <p>Simple, stylish and easy to wear.</p>
+      <a class="shop" href="https://s.click.aliexpress.com/e/_c3wlqHyP" target="_blank">Shop Now</a>
+    </div>
+  </div>
 
 </section>
 
-</main>
-
 <footer>
-© 2026 Trendora Vibe — All rights reserved.
+  © 2026 Trendora Vibe. All rights reserved.
 </footer>
 
 </body>
