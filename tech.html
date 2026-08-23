@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech | Trendora Vibe</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#f5f7f8;
+  color:#252525;
+  font-family:Arial,sans-serif;
+}
+
+header{
+  background:#171b1f;
+  padding:22px 20px;
+  text-align:center;
+}
+
+.logo{
+  color:#c6a86b;
+  font-family:Georgia,serif;
+  font-size:30px;
+  letter-spacing:2px;
+}
+
+nav{
+  margin-top:15px;
+}
+
+nav a{
+  color:#f5f0e7;
+  text-decoration:none;
+  margin:0 12px;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+nav a:hover{
+  color:#c6a86b;
+}
+
+.hero{
+  text-align:center;
+  padding:45px 20px 30px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#6d7378;
+  font-size:15px;
+}
+
+.products{
+  max-width:1100px;
+  margin:20px auto 60px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:transform .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  display:block;
+}
+
+.info{
+  padding:18px;
+  text-align:center;
+}
+
+.info h2{
+  font-family:Georgia,serif;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.info p{
+  color:#777;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+.shop{
+  display:inline-block;
+  background:#171b1f;
+  color:white;
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:4px;
+  font-size:13px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.shop:hover{
+  background:#c6a86b;
+  color:#171b1f;
+}
+
+footer{
+  background:#171b1f;
+  color:#aaa;
+  text-align:center;
+  padding:25px 15px;
+  font-size:13px;
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:30px;
+  }
+
+  .products{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:0 12px;
+  }
+
+  .card img{
+    height:210px;
+  }
+
+  .info{
+    padding:12px 8px;
+  }
+
+  .info h2{
+    font-size:16px;
+  }
+
+  .shop{
+    padding:8px 12px;
+    font-size:11px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TRENDORA VIBE</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Jewelry.html">Jewelry</a>
+    <a href="tech.html">Tech</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Tech Collection</h1>
+  <p>Smart, useful and stylish tech finds for everyday life.</p>
+</section>
+
+<section class="products">
+
+</section>
+
+<footer>
+  © 2026 Trendora Vibe. All rights reserved.
+</footer>
+
+</body>
+</html>
