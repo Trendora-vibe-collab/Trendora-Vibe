@@ -60,7 +60,7 @@ nav a:hover{
   color:#c6a86b;
 }
 
-/* PAGE HERO */
+/* HERO */
 
 .page-hero{
   padding:90px 7%;
@@ -221,7 +221,6 @@ TRENDORA VIBE
 
 </header>
 
-
 <main>
 
 <section class="page-hero">
@@ -239,126 +238,17 @@ chosen to add a little sparkle to your everyday style.
 
 </section>
 
-
 <section class="products">
 
 <div class="product-grid">
 
-
-<!-- PRODUCT 1 -->
-
-<div class="product">
-
-<img src="S568383c568e3495495e01f96b8c916e33.jpg"
-alt="Floral Gold-Tone Cuff Bracelet">
-
-<div class="product-label">
-Featured Find
-</div>
-
-<h2>Floral Gold-Tone Cuff Bracelet</h2>
-
-<p>
-Delicate floral design with beautiful pink, blue and white
-variations — a feminine statement piece for everyday style.
-</p>
-
-<a class="btn"
-href="https://s.click.aliexpress.com/e/_c3wlqHyP"
-target="_blank">
-Shop on AliExpress
-</a>
-
-</div>
-
-
-<!-- PRODUCT 2 -->
-
-<div class="product">
-
-<img src="Sf3a125b6f8404db798a31926e29b4aa7q.jpg"
-alt="Elegant Flower Cuff Bracelet">
-
-<div class="product-label">
-Elegant Pick
-</div>
-
-<h2>Elegant Flower Cuff Bracelet</h2>
-
-<p>
-A graceful gold-tone floral bracelet designed for a soft,
-elegant and stylish look.
-</p>
-
-<a class="btn"
-href="https://s.click.aliexpress.com/e/_c3wlqHyP"
-target="_blank">
-Shop on AliExpress
-</a>
-
-</div>
-
-
-<!-- PRODUCT 3 -->
-
-<div class="product">
-
-<img src="Screenshot_20260820-110824.png"
-alt="Gold-Tone Heart Cuff Bracelet">
-
-<div class="product-label">
-New Find
-</div>
-
-<h2>Gold-Tone Heart Cuff Bracelet</h2>
-
-<p>
-A delicate gold-tone cuff featuring elegant heart details —
-a simple statement piece for everyday style.
-</p>
-
-<a class="btn"
-href="https://s.click.aliexpress.com/e/_c2xTnTwb"
-target="_blank">
-Shop on AliExpress
-</a>
-
-</div>
-
-
-<!-- PRODUCT 4 -->
-
-<div class="product">
-
-<img src="Screenshot_20260820-110747.png"
-alt="Gold-Tone Shell Cuff Bracelet">
-
-<div class="product-label">
-New Find
-</div>
-
-<h2>Gold-Tone Shell Cuff Bracelet</h2>
-
-<p>
-A chic gold-tone cuff with shell-inspired details,
-perfect for adding a refined touch to any outfit.
-</p>
-
-<a class="btn"
-href="https://s.click.aliexpress.com/e/_c2xTnTwb"
-target="_blank">
-Shop on AliExpress
-</a>
-
-</div>
-
+<!-- NEW JEWELRY PRODUCTS WILL GO HERE -->
 
 </div>
 
 </section>
 
 </main>
-
 
 <footer>
 © 2026 Trendora Vibe — All rights reserved.
