@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fashion | Trendora Vibe</title>
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#f3eadf;
+  color:#211b18;
+  font-family:Arial,sans-serif;
+  min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+  background:#111;
+  color:#f5f0e7;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid #c9a86a;
+}
+
+.logo{
+  color:#f5f0e7;
+  font-size:22px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+nav a{
+  color:#f5f0e7;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+nav a:hover{
+  color:#c9a86a;
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  padding:75px 20px 60px;
+
+  background:
+    radial-gradient(circle at 20% 25%,#8e6870 0%,transparent 32%),
+    radial-gradient(circle at 80% 70%,#c9a86a 0%,transparent 25%),
+    #211b18;
+
+  color:#fffaf4;
+}
+
+.hero h1{
+  font-size:46px;
+  margin-bottom:15px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+}
+
+.hero p{
+  font-size:17px;
+  color:#eadfd4;
+}
+
+/* PRODUCTS */
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,320px);
+  justify-content:center;
+  gap:35px;
+  padding:50px 7% 90px;
+  background:#f3eadf;
+}
+
+/* PRODUCT CARD */
+
+.card{
+  background:#fffaf4;
+  border:1px solid #d8c5ad;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(33,27,24,.12);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#c9a86a;
+  box-shadow:0 12px 30px rgba(201,168,106,.25);
+}
+
+.card img{
+  width:100%;
+  display:block;
+}
+
+.info{
+  padding:22px;
+}
+
+.info h2{
+  color:#4b3730;
+  margin-bottom:10px;
+  font-family:Georgia,"Times New Roman",serif;
+}
+
+.info p{
+  color:#75665d;
+  line-height:1.5;
+  margin-bottom:20px;
+}
+
+/* SHOP BUTTON */
+
+.shop{
+  display:inline-block;
+  background:#211b18;
+  color:#fffaf4;
+  text-decoration:none;
+  padding:12px 22px;
+  border-radius:5px;
+  font-weight:bold;
+  border:1px solid #c9a86a;
+  transition:.3s;
+}
+
+.shop:hover{
+  background:#c9a86a;
+  color:#211b18;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:28px;
+  background:#111;
+  color:#c9a86a;
+  font-size:14px;
+  border-top:1px solid #c9a86a;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  header{
+    padding:17px 5%;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  nav a{
+    margin-left:10px;
+    font-size:10px;
+  }
+
+  .hero{
+    padding:60px 20px 50px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+    padding:40px 5% 70px;
+  }
+
+  .card{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">TRENDORA VIBE</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jewelry.html">Jewelry</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="home.html">Home Decor</a>
+    <a href="tech.html">Tech</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <h1>Fashion Collection</h1>
+
+  <p>
+    Effortless style, beautiful details and pieces worth wearing.
+  </p>
+
+</section>
+
+<section class="products">
+
+  <!-- Fashion products will be added here -->
+
+</section>
+
+<footer>
+
+  © 2026 Trendora Vibe. All rights reserved.
+
+</footer>
+
+</body>
+  </html>
