@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trendora Vibe | Jewelry</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:#f5f0e7;
+  color:#171717;
+}
+
+/* HEADER */
+
+header{
+  background:#111;
+  color:#f5f0e7;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid #b79a62;
+}
+
+.logo{
+  font-family:Arial,sans-serif;
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+nav a{
+  color:#f5f0e7;
+  text-decoration:none;
+  margin-left:25px;
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+nav a:hover{
+  color:#c6a86b;
+}
+
+/* PAGE HERO */
+
+.page-hero{
+  padding:90px 7%;
+  text-align:center;
+  background:#111;
+  color:#f5f0e7;
+}
+
+.page-hero .small{
+  color:#c6a86b;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.page-hero h1{
+  font-size:60px;
+  font-weight:500;
+  margin-bottom:18px;
+}
+
+.page-hero p{
+  color:#c8c0b3;
+  font-family:Arial,sans-serif;
+  max-width:600px;
+  margin:auto;
+  line-height:1.7;
+}
+
+/* PRODUCTS */
+
+.products{
+  padding:80px 7%;
+  max-width:1250px;
+  margin:auto;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.product{
+  background:#fff;
+  padding:18px;
+  border:1px solid #ded5c6;
+  transition:.3s;
+}
+
+.product:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px #00000018;
+  border-color:#c6a86b;
+}
+
+.product img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block;
+  margin-bottom:20px;
+}
+
+.product-label{
+  color:#9b7b42;
+  font-family:Arial,sans-serif;
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+
+.product h2{
+  font-size:23px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+.product p{
+  font-family:Arial,sans-serif;
+  color:#666;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 22px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#c6a86b;
+  color:#111;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111;
+  color:#777;
+  text-align:center;
+  padding:35px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  border-top:1px solid #302b24;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  nav{
+    display:none;
+  }
+
+  .page-hero h1{
+    font-size:45px;
+  }
+
+  .products{
+    padding:60px 5%;
+  }
+
+  .product img{
+    height:280px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+TRENDORA VIBE
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="jewelry.html">Jewelry</a>
+<a href="index.html#collections">Shop</a>
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+<div class="small">
+The Jewelry Edit
+</div>
+
+<h1>Jewelry</h1>
+
+<p>
+Elegant details, statement pieces and beautiful finds
+chosen to add a little sparkle to your everyday style.
+</p>
+
+</section>
+
+
+<section class="products">
+
+<div class="product-grid">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product">
+
+<img src="S568383c568e3495495e01f96b8c916e33.jpg"
+alt="Floral Gold-Tone Cuff Bracelet">
+
+<div class="product-label">
+Featured Find
+</div>
+
+<h2>Floral Gold-Tone Cuff Bracelet</h2>
+
+<p>
+Delicate floral design with beautiful pink, blue and white
+variations — a feminine statement piece for everyday style.
+</p>
+
+<a class="btn"
+href="https://s.click.aliexpress.com/e/_c3wlqHyP"
+target="_blank">
+Shop on AliExpress
+</a>
+
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product">
+
+<img src="Sf3a125b6f8404db798a31926e29b4aa7q.jpg"
+alt="Elegant Flower Cuff Bracelet">
+
+<div class="product-label">
+Elegant Pick
+</div>
+
+<h2>Elegant Flower Cuff Bracelet</h2>
+
+<p>
+A graceful gold-tone floral bracelet designed for a soft,
+elegant and stylish look.
+</p>
+
+<a class="btn"
+href="https://s.click.aliexpress.com/e/_c3wlqHyP"
+target="_blank">
+Shop on AliExpress
+</a>
+
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product">
+
+<img src="Screenshot_20260820-110824.png"
+alt="Gold-Tone Heart Cuff Bracelet">
+
+<div class="product-label">
+New Find
+</div>
+
+<h2>Gold-Tone Heart Cuff Bracelet</h2>
+
+<p>
+A delicate gold-tone cuff featuring elegant heart details —
+a simple statement piece for everyday style.
+</p>
+
+<a class="btn"
+href="https://s.click.aliexpress.com/e/_c2xTnTwb"
+target="_blank">
+Shop on AliExpress
+</a>
+
+</div>
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product">
+
+<img src="Screenshot_20260820-110747.png"
+alt="Gold-Tone Shell Cuff Bracelet">
+
+<div class="product-label">
+New Find
+</div>
+
+<h2>Gold-Tone Shell Cuff Bracelet</h2>
+
+<p>
+A chic gold-tone cuff with shell-inspired details,
+perfect for adding a refined touch to any outfit.
+</p>
+
+<a class="btn"
+href="https://s.click.aliexpress.com/e/_c2xTnTwb"
+target="_blank">
+Shop on AliExpress
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+© 2026 Trendora Vibe — All rights reserved.
+</footer>
+
+</body>
+</html>
