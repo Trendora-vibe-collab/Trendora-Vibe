@@ -13,11 +13,23 @@
     }
 
     body {
-      background: #f5f7f8;
-      color: #252525;
-      font-family: Arial, sans-serif;
+  background: #111;
+  color: #f5f0e7;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
     }
 
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+  }
+
+    
     header {
       background: #252525;
       padding: 20px 7%;
@@ -58,20 +70,43 @@
     }
 
     .hero p {
-      font-size: 17px;
-      color: #666;
+  font-size: 17px;
+  color: #d8d1c5;
     }
 
-    .products {
-      display:grid;
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+  }
+
+}
+  }
+
+  .card{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+  }
+
+}
+    }
+
+.products{
+  display:grid;
   grid-template-columns:repeat(2, 320px);
   justify-content:center;
   gap:35px;
-  padding:20px 7% 70px;
-    }
-
+  padding:40px 7% 90px;
+  background:#111;
+}
+    
     .card {
-      background: white;
+  background: #1b1b1b;
       width: 320px;
       border-radius: 12px;
       overflow: hidden;
@@ -92,7 +127,7 @@
     }
 
     .info p {
-      color: #666;
+      color: #c8c0b3;
       line-height: 1.5;
       margin-bottom: 20px;
     }
