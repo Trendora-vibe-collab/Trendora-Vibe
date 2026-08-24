@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trendora Vibe | Curated Finds</title>
+<title>Trendora Vibe | Fashion • Beauty • Lifestyle</title>
 
 <style>
 *{
@@ -19,15 +19,15 @@ html{
 
 body{
   font-family:Georgia,"Times New Roman",serif;
-  background:#f5f0e7;
-  color:#171717;
+  background:#fff7f8;
+  color:#241b1f;
 }
 
 /* HEADER */
 
 header{
-  background:#111;
-  color:#f5f0e7;
+  background:#064e3b;
+  color:#fff7f8;
   padding:20px 7%;
   display:flex;
   justify-content:space-between;
@@ -35,7 +35,7 @@ header{
   position:sticky;
   top:0;
   z-index:100;
-  border-bottom:1px solid #b79a62;
+  border-bottom:3px solid #7b1e3a;
 }
 
 .logo{
@@ -46,18 +46,19 @@ header{
 }
 
 nav a{
-  color:#f5f0e7;
+  color:#fff7f8;
   text-decoration:none;
-  margin-left:25px;
+  margin-left:24px;
   font-family:Arial,sans-serif;
-  font-size:14px;
-  font-weight:600;
+  font-size:13px;
+  font-weight:700;
   letter-spacing:1px;
   text-transform:uppercase;
+  transition:.3s;
 }
 
 nav a:hover{
-  color:#c6a86b;
+  color:#f3b6c5;
 }
 
 /* HERO */
@@ -70,10 +71,10 @@ nav a:hover{
   text-align:center;
   padding:90px 7%;
   background:
-    radial-gradient(circle at 20% 20%,#3a3023 0%,transparent 35%),
-    radial-gradient(circle at 80% 80%,#332b22 0%,transparent 35%),
-    #111;
-  color:#f5f0e7;
+    radial-gradient(circle at 15% 20%,#7b1e3a 0%,transparent 32%),
+    radial-gradient(circle at 85% 80%,#8e3150 0%,transparent 30%),
+    #064e3b;
+  color:#fff7f8;
 }
 
 .hero-content{
@@ -82,7 +83,7 @@ nav a:hover{
 
 .eyebrow{
   font-family:Arial,sans-serif;
-  color:#c6a86b;
+  color:#f3b6c5;
   letter-spacing:5px;
   text-transform:uppercase;
   font-size:12px;
@@ -97,23 +98,23 @@ nav a:hover{
 }
 
 .hero h1 span{
-  color:#c6a86b;
+  color:#f3b6c5;
   font-style:italic;
 }
 
 .hero p{
-  max-width:620px;
+  max-width:650px;
   margin:0 auto 35px;
   font-size:19px;
   line-height:1.7;
-  color:#d8d1c5;
+  color:#f9dfe5;
 }
 
 .btn{
   display:inline-block;
   padding:15px 30px;
-  background:#c6a86b;
-  color:#111;
+  background:#f3b6c5;
+  color:#064e3b;
   text-decoration:none;
   font-family:Arial,sans-serif;
   font-size:13px;
@@ -124,7 +125,7 @@ nav a:hover{
 }
 
 .btn:hover{
-  background:#f0dfb8;
+  background:#fff7f8;
   transform:translateY(-3px);
 }
 
@@ -141,7 +142,7 @@ nav a:hover{
 
 .section-heading .small{
   font-family:Arial,sans-serif;
-  color:#9b7b42;
+  color:#7b1e3a;
   font-size:12px;
   letter-spacing:4px;
   text-transform:uppercase;
@@ -152,10 +153,11 @@ nav a:hover{
   font-size:44px;
   font-weight:500;
   margin-bottom:12px;
+  color:#064e3b;
 }
 
 .section-heading p{
-  color:#665f55;
+  color:#715f65;
   font-family:Arial,sans-serif;
 }
 
@@ -163,42 +165,50 @@ nav a:hover{
 
 .categories{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
   max-width:1200px;
   margin:auto;
 }
 
 .category{
   min-height:300px;
-  padding:35px 25px;
+  padding:35px 28px;
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
   text-decoration:none;
-  color:#f5f0e7;
-  background:#171717;
-  border:1px solid #3a3329;
+  color:#fff7f8;
+  background:#064e3b;
+  border:2px solid transparent;
   transition:.35s;
   position:relative;
   overflow:hidden;
 }
 
 .category:nth-child(2){
-  background:#25221d;
+  background:#7b1e3a;
 }
 
 .category:nth-child(3){
-  background:#20211e;
+  background:#8e3150;
 }
 
 .category:nth-child(4){
-  background:#1d1d1d;
+  background:#075e47;
+}
+
+.category:nth-child(5){
+  background:#53152b;
+}
+
+.category:nth-child(6){
+  background:#163f35;
 }
 
 .category:hover{
   transform:translateY(-8px);
-  border-color:#c6a86b;
+  border-color:#f3b6c5;
 }
 
 .category-icon{
@@ -207,7 +217,7 @@ nav a:hover{
 }
 
 .category-number{
-  color:#c6a86b;
+  color:#f3b6c5;
   font-family:Arial,sans-serif;
   font-size:11px;
   letter-spacing:3px;
@@ -221,17 +231,66 @@ nav a:hover{
 }
 
 .category p{
-  color:#bdb6aa;
+  color:#f8dfe5;
   font-family:Arial,sans-serif;
   font-size:13px;
   line-height:1.5;
 }
 
+/* FEATURED CATEGORIES */
+
+.featured{
+  background:#f8e8ec;
+}
+
+.featured-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.feature-card{
+  background:#fff7f8;
+  padding:38px;
+  border-left:5px solid #7b1e3a;
+  text-decoration:none;
+  color:#241b1f;
+  transition:.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(64,25,40,.12);
+}
+
+.feature-card span{
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:3px;
+  color:#7b1e3a;
+  text-transform:uppercase;
+}
+
+.feature-card h3{
+  margin:12px 0;
+  font-size:30px;
+  color:#064e3b;
+}
+
+.feature-card p{
+  font-family:Arial,sans-serif;
+  color:#715f65;
+  font-size:14px;
+  line-height:1.7;
+}
+
 /* BRAND STORY */
 
 .story{
-  background:#111;
-  color:#f5f0e7;
+  background:#064e3b;
+  color:#fff7f8;
   text-align:center;
 }
 
@@ -241,7 +300,7 @@ nav a:hover{
 }
 
 .story .small{
-  color:#c6a86b;
+  color:#f3b6c5;
   font-family:Arial,sans-serif;
   letter-spacing:4px;
   font-size:12px;
@@ -256,7 +315,7 @@ nav a:hover{
 }
 
 .story p{
-  color:#c8c0b3;
+  color:#e7d9dc;
   line-height:1.8;
   font-size:17px;
 }
@@ -264,11 +323,10 @@ nav a:hover{
 /* FOOTER */
 
 footer{
-  background:#111;
-  color:#777;
+  background:#7b1e3a;
+  color:#f8dfe5;
   text-align:center;
   padding:35px 7%;
-  border-top:1px solid #302b24;
   font-family:Arial,sans-serif;
   font-size:12px;
   letter-spacing:.5px;
@@ -287,7 +345,7 @@ footer{
   }
 
   nav a{
-    margin-left:10px;
+    margin-left:9px;
     font-size:10px;
   }
 
@@ -305,6 +363,10 @@ footer{
 
   .category{
     min-height:260px;
+  }
+
+  .featured-grid{
+    grid-template-columns:1fr;
   }
 
   .section{
@@ -340,6 +402,10 @@ footer{
     font-size:35px;
   }
 
+  .feature-card{
+    padding:28px;
+  }
+
 }
 </style>
 </head>
@@ -354,8 +420,10 @@ TRENDORA VIBE
 
 <nav>
   <a href="/Trendora-Vibe/index.html">Home</a>
+  <a href="/Trendora-Vibe/fashion.html">Fashion</a>
+  <a href="/Trendora-Vibe/beauty.html">Beauty</a>
+  <a href="/Trendora-Vibe/skincare.html">Skincare</a>
   <a href="/Trendora-Vibe/jewelry.html">Jewelry</a>
-  <a href="/Trendora-Vibe/tech.html">Tech</a>
 </nav>
 
 </header>
@@ -370,21 +438,21 @@ TRENDORA VIBE
 <div class="hero-content">
 
 <div class="eyebrow">
-Style • Finds • Inspiration
+Style • Beauty • Lifestyle
 </div>
 
 <h1>
-Find Something<br>
-Worth <span>Vibing</span> About.
+Find Your<br>
+Perfect <span>Vibe.</span>
 </h1>
 
 <p>
-Curated fashion, jewelry, accessories and everyday finds
-chosen to bring a little more style into your world.
+Discover fashion, beauty, skincare, jewelry and lifestyle
+finds chosen to make everyday moments a little more stylish.
 </p>
 
 <a class="btn" href="#collections">
-Explore Collections
+Explore The Vibe
 </a>
 
 </div>
@@ -392,7 +460,7 @@ Explore Collections
 </section>
 
 
-<!-- COLLECTIONS -->
+<!-- MAIN COLLECTIONS -->
 
 <section class="section" id="collections">
 
@@ -403,17 +471,80 @@ The Trendora Edit
 </div>
 
 <h2>
-Explore Our Finds
+Shop The Vibe
 </h2>
 
 <p>
-Discover something beautiful, useful or simply worth having.
+Trending finds, beautiful details and everyday favorites.
 </p>
 
 </div>
 
 
 <div class="categories">
+
+
+<a class="category" href="fashion.html">
+
+<div class="category-icon">
+👗
+</div>
+
+<div class="category-number">
+01 — TRENDING
+</div>
+
+<h3>
+Fashion
+</h3>
+
+<p>
+Fresh styles, accessories and pieces made to complete your look.
+</p>
+
+</a>
+
+
+<a class="category" href="beauty.html">
+
+<div class="category-icon">
+💄
+</div>
+
+<div class="category-number">
+02 — TRENDING
+</div>
+
+<h3>
+Beauty
+</h3>
+
+<p>
+Beauty finds and little extras for your everyday glow.
+</p>
+
+</a>
+
+
+<a class="category" href="skincare.html">
+
+<div class="category-icon">
+🧴
+</div>
+
+<div class="category-number">
+03 — TRENDING
+</div>
+
+<h3>
+Skincare
+</h3>
+
+<p>
+Simple and stylish skincare finds worth discovering.
+</p>
+
+</a>
 
 
 <a class="category" href="jewelry.html">
@@ -423,7 +554,7 @@ Discover something beautiful, useful or simply worth having.
 </div>
 
 <div class="category-number">
-01 — COLLECTION
+04 — COLLECTION
 </div>
 
 <h3>
@@ -431,28 +562,7 @@ Jewelry
 </h3>
 
 <p>
-Elegant pieces for everyday moments and special occasions.
-</p>
-
-</a>
-
-
-<a class="category" href="fashion.html">
-
-<div class="category-icon">
-👜
-</div>
-
-<div class="category-number">
-02 — COLLECTION
-</div>
-
-<h3>
-Fashion
-</h3>
-
-<p>
-Stylish accessories and pieces to complete your look.
+Elegant pieces and pretty details to elevate your vibe.
 </p>
 
 </a>
@@ -465,7 +575,7 @@ Stylish accessories and pieces to complete your look.
 </div>
 
 <div class="category-number">
-03 — COLLECTION
+05 — LIFESTYLE
 </div>
 
 <h3>
@@ -473,7 +583,7 @@ Home
 </h3>
 
 <p>
-Beautiful finds designed to add character to your space.
+Beautiful finds that bring personality and character to your space.
 </p>
 
 </a>
@@ -486,7 +596,7 @@ Beautiful finds designed to add character to your space.
 </div>
 
 <div class="category-number">
-04 — COLLECTION
+06 — LIFESTYLE
 </div>
 
 <h3>
@@ -494,11 +604,70 @@ Tech
 </h3>
 
 <p>
-Smart gadgets and useful finds for everyday life.
+Useful gadgets and clever finds for modern everyday life.
 </p>
 
 </a>
 
+
+</div>
+
+</section>
+
+
+<!-- FEATURED VIBE -->
+
+<section class="section featured">
+
+<div class="section-heading">
+
+<div class="small">
+What's Trending
+</div>
+
+<h2>
+The Vibe Right Now
+</h2>
+
+<p>
+A little inspiration for your next find.
+</p>
+
+</div>
+
+
+<div class="featured-grid">
+
+<a class="feature-card" href="fashion.html">
+
+<span>Style Edit</span>
+
+<h3>
+Wear The Vibe
+</h3>
+
+<p>
+Discover accessories and fashion finds that can instantly
+refresh your everyday look.
+</p>
+
+</a>
+
+
+<a class="feature-card" href="beauty.html">
+
+<span>Beauty Edit</span>
+
+<h3>
+Glow The Vibe
+</h3>
+
+<p>
+Explore beauty and skincare finds selected for simple,
+stylish everyday routines.
+</p>
+
+</a>
 
 </div>
 
@@ -523,8 +692,8 @@ Your Finds.
 <p>
 Trendora Vibe is a curated space for discovering stylish,
 interesting and useful products from around the web.
-We search for the finds worth noticing so you can spend
-less time searching and more time enjoying what you discover.
+We search for finds worth noticing so you can spend less
+time searching and more time enjoying what you discover.
 </p>
 
 </div>
